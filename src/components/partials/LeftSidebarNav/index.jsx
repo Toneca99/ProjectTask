@@ -26,7 +26,8 @@ const LeftSidebar = () => {
             </div>
             <LeftSidebarLinks />
             <div className={style.nextFormButton}>
-                <span>Next Form</span>
+                <span>Next Form 1/4</span>
+                <Icon styleIcon={style.arrowNext} name="right-arrow" width="15px" height="15px" />
             </div>
         </nav>
     );

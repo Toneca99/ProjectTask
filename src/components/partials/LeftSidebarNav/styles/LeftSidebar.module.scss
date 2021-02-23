@@ -33,3 +33,23 @@
 .selected svg {
     @include hover-color;
 }
+
+.nextFormButton {
+    @extend %flex-container;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    background: $blue-400;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    text-align: center;
+
+    span {
+        @extend %flex-item-1;
+    }
+}
+
+.arrowNext {
+    fill: $white;
+    align-self: flex-end;
+}

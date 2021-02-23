@@ -19,7 +19,7 @@ const { closeFormPreview, expandFormPreview } = React.useContext(PreviewScreenCo
     }, [button])
 
     return (
-        <div className={style.navItems}>
+        <ul className={style.navItems}>
             {navLinks.map((item, key) => (
                 <LeftSidebarLink
                     key={key}
@@ -29,7 +29,7 @@ const { closeFormPreview, expandFormPreview } = React.useContext(PreviewScreenCo
                     onClick={() => selectButton(key)}
                 />
             ))}
-        </div>
+        </ul>
     )
 };
 
