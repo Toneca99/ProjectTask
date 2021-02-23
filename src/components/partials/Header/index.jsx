@@ -1,16 +1,19 @@
 import React from 'react';
+import { PreviewScreenContext } from 'components/shared/PreviewScreenContext';
 import Icon from 'components/shared/Icon';
 import Logo from 'static/images/Logo.svg'
 import style from './styles/Header.module.scss';
 
 const Header = () => {
+    const { previewState } = React.useContext(PreviewScreenContext);
+
     return (
         <header>
             <article className={style.leftSide}>
                 <img className={style.logo} src={Logo} alt="SMSBump Logo" />
                 <div className={style.headerItem}>
                     <Icon name="pen" width="15px" height="15px" />
-                    <span>Form 1</span>
+                    <span>Form {previewState.selectedForm.form + 1}</span>
                 </div>
             </article>
             <article className={style.rightSide}>

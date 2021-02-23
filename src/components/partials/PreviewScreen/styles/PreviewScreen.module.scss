@@ -10,10 +10,19 @@
 }
 
 .content {
-    max-width: 100%;
-    background: $preview-gradient;
+    @extend %flex-container;
     @extend %flex-item-1;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: $preview-gradient;
     height: 100%;;
+    overflow: hidden;
+}
+
+.previewImage {
+    width: 44.5rem;
+    height: 44.5rem;
 }
 
 .tablet {
@@ -23,3 +32,4 @@
 .mobile {
     max-width: 464px;
 }
+

@@ -1,8 +1,11 @@
 import React from 'react';
 import Icon from 'components/shared/Icon';
+import { PreviewScreenContext } from 'components/shared/PreviewScreenContext';
 import style from './styles/SubHeader.module.scss'
 
 const SubHeader = () => {
+    const { previewState } = React.useContext(PreviewScreenContext);
+
     return (
         <div className={style.container}>
             <div className={style.toggleButtons}>
@@ -10,7 +13,7 @@ const SubHeader = () => {
                 <span>2.Behaviour</span>
             </div>
             <div className={style.previewButtons}>
-                <span>Form 1</span>
+                <span>Form {previewState.selectedForm.form + 1}</span>
                 <span>Success</span>
             </div>
             <div>

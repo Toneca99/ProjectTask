@@ -1,39 +1,30 @@
 import React from 'react';
 import classnames from 'classnames';
-// import Form1 from 'static/images/Forms-Previews/HowDidGo.svg';
+import { forms } from 'constants/config';
 import { PreviewScreenContext } from 'components/shared/PreviewScreenContext';
-import Form1 from 'static/images/Forms-Previews/CommerceExpert.svg';
 import style from './styles/FormPreview.module.scss';
 
 const FormPreview = () => {
-    const { previewState } = React.useContext(PreviewScreenContext);
-    const containerStyle = classnames(style.container, {[style.toggled]: !!previewState.formToggled});
+    const { previewState, selectForm } = React.useContext(PreviewScreenContext);
+    const containerStyle = classnames(style.container, { [style.expanded]: previewState.formExpanded === true });
+
+    const setFomSelected = (form, index) => () => {
+        selectForm({form: index, src: form.src})
+    }
+    const selectedForm = previewState.selectedForm.form && previewState.selectedForm.form;
+
+
     return (
         <div className={containerStyle}>
-            <article className={style.article}>
-                <img className={style.imgPreview} src={Form1} width="120px" height="120px" />
-                <p>This Form has 2 <span>steps</span></p>
-            </article>
-            <article className={style.article}>
-                <img className={style.imgPreview} src={Form1} width="120px" height="120px" />
-                <p>This Form has 2 <span>steps</span></p>
-            </article>
-            <article className={style.article}>
-                <img className={style.imgPreview} src={Form1} width="120px" height="120px" />
-                <p>This Form has 2 <span>steps</span></p>
-            </article>
-            <article className={style.article}>
-                <img className={style.imgPreview} src={Form1} width="120px" height="120px" />
-                <p>This Form has 2 <span>steps</span></p>
-            </article>
-            <article className={style.article}>
-                <img className={style.imgPreview} src={Form1} width="120px" height="120px" />
-                <p>This Form has 2 <span>steps</span></p>
-            </article>
-            <article className={style.article}>
-                <img className={style.imgPreview} src={Form1} width="120px" height="120px" />
-                <p>This Form has 2 <span>steps</span></p>
-            </article>
+            {forms.map((form, key) => (
+                <article className={style.article} onClick={setFomSelected(form, key)}>
+                    <img className={style.imgPreview} src={form.src} />
+                    {selectedForm === key &&
+                        <span className={style.selected}>Selected</span>
+                    }
+                    <p>This Form has {form.steps} <span>steps</span></p>
+                </article>
+            ))}
         </div>
     );
 }

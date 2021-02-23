@@ -9,15 +9,15 @@ import style from './styles/AppLayout.module.scss';
 
 const Applayout = () => (
     <div className={style.container}>
-        <Header />
-        <SubHeader />
-        <div className={style.content}>
-            <PreviewScreenProvider >
+        <PreviewScreenProvider >
+            <Header />
+            <SubHeader />
+            <div className={style.content}>
                 <LeftSidebarNav />
                 <FormPreview />
                 <PreviewScreen />
-            </PreviewScreenProvider>
-        </div>
+            </div>
+        </PreviewScreenProvider>
     </div>
 );
 

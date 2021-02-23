@@ -5,16 +5,15 @@ import LeftSidebarLink from 'components/partials/LeftSidebarNav/LeftSidebarLink'
 import style from './styles/LeftSidebar.module.scss'
 
 const LeftSidebarLinks = () => {
+const { closeFormPreview, expandFormPreview } = React.useContext(PreviewScreenContext);
     const [button, selectButton] = useState(1);
-    const { toggleFormPreview, previewState } = React.useContext(PreviewScreenContext);
     const themeButtonIndex = 0;
-    console.log(button)
 
     useEffect(() => {
         if (themeButtonIndex === button) {
-            toggleFormPreview(!previewState.formToggled)
+            expandFormPreview()
         } else {
-            toggleFormPreview(false)
+            closeFormPreview()
         }
 
     }, [button])
