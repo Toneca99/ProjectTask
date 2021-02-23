@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ProjectTask/static/css/main.2aa8a3af.chunk.css",
+    "main.css": "/ProjectTask/static/css/main.63434426.chunk.css",
     "main.js": "/ProjectTask/static/js/main.baa4c6ec.chunk.js",
     "main.js.map": "/ProjectTask/static/js/main.baa4c6ec.chunk.js.map",
     "runtime-main.js": "/ProjectTask/static/js/runtime-main.63858dc6.js",
@@ -8,7 +8,7 @@
     "static/js/2.5f4a2cd4.chunk.js": "/ProjectTask/static/js/2.5f4a2cd4.chunk.js",
     "static/js/2.5f4a2cd4.chunk.js.map": "/ProjectTask/static/js/2.5f4a2cd4.chunk.js.map",
     "index.html": "/ProjectTask/index.html",
-    "static/css/main.2aa8a3af.chunk.css.map": "/ProjectTask/static/css/main.2aa8a3af.chunk.css.map",
+    "static/css/main.63434426.chunk.css.map": "/ProjectTask/static/css/main.63434426.chunk.css.map",
     "static/js/2.5f4a2cd4.chunk.js.LICENSE.txt": "/ProjectTask/static/js/2.5f4a2cd4.chunk.js.LICENSE.txt",
     "static/media/70off.fd8eda02.svg": "/ProjectTask/static/media/70off.fd8eda02.svg",
     "static/media/Awesome.6f616965.svg": "/ProjectTask/static/media/Awesome.6f616965.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.63858dc6.js",
     "static/js/2.5f4a2cd4.chunk.js",
-    "static/css/main.2aa8a3af.chunk.css",
+    "static/css/main.63434426.chunk.css",
     "static/js/main.baa4c6ec.chunk.js"
   ]
 }
