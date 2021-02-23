@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ProjectTask/static/css/main.ee731607.chunk.css",
-    "main.js": "/ProjectTask/static/js/main.9a4b6244.chunk.js",
-    "main.js.map": "/ProjectTask/static/js/main.9a4b6244.chunk.js.map",
+    "main.css": "/ProjectTask/static/css/main.13f25158.chunk.css",
+    "main.js": "/ProjectTask/static/js/main.baa4c6ec.chunk.js",
+    "main.js.map": "/ProjectTask/static/js/main.baa4c6ec.chunk.js.map",
     "runtime-main.js": "/ProjectTask/static/js/runtime-main.63858dc6.js",
     "runtime-main.js.map": "/ProjectTask/static/js/runtime-main.63858dc6.js.map",
-    "static/js/2.17d35585.chunk.js": "/ProjectTask/static/js/2.17d35585.chunk.js",
-    "static/js/2.17d35585.chunk.js.map": "/ProjectTask/static/js/2.17d35585.chunk.js.map",
+    "static/js/2.5f4a2cd4.chunk.js": "/ProjectTask/static/js/2.5f4a2cd4.chunk.js",
+    "static/js/2.5f4a2cd4.chunk.js.map": "/ProjectTask/static/js/2.5f4a2cd4.chunk.js.map",
     "index.html": "/ProjectTask/index.html",
-    "static/css/main.ee731607.chunk.css.map": "/ProjectTask/static/css/main.ee731607.chunk.css.map",
-    "static/js/2.17d35585.chunk.js.LICENSE.txt": "/ProjectTask/static/js/2.17d35585.chunk.js.LICENSE.txt",
+    "static/css/main.13f25158.chunk.css.map": "/ProjectTask/static/css/main.13f25158.chunk.css.map",
+    "static/js/2.5f4a2cd4.chunk.js.LICENSE.txt": "/ProjectTask/static/js/2.5f4a2cd4.chunk.js.LICENSE.txt",
     "static/media/70off.fd8eda02.svg": "/ProjectTask/static/media/70off.fd8eda02.svg",
     "static/media/Awesome.6f616965.svg": "/ProjectTask/static/media/Awesome.6f616965.svg",
     "static/media/CommerceExpert.7f95bf72.svg": "/ProjectTask/static/media/CommerceExpert.7f95bf72.svg",
     "static/media/global.scss": "/ProjectTask/static/media/HelveticaNeue-Bold.fde643d7.otf",
-    "static/media/IconSprite.0521f9c9.svg": "/ProjectTask/static/media/IconSprite.0521f9c9.svg",
+    "static/media/IconSprite.31a3d793.svg": "/ProjectTask/static/media/IconSprite.31a3d793.svg",
     "static/media/Logo.37182265.svg": "/ProjectTask/static/media/Logo.37182265.svg",
     "static/media/Marketing nerds.2bcbc23d.svg": "/ProjectTask/static/media/Marketing nerds.2bcbc23d.svg",
     "static/media/Police.6e3aa6af.svg": "/ProjectTask/static/media/Police.6e3aa6af.svg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.63858dc6.js",
-    "static/js/2.17d35585.chunk.js",
-    "static/css/main.ee731607.chunk.css",
-    "static/js/main.9a4b6244.chunk.js"
+    "static/js/2.5f4a2cd4.chunk.js",
+    "static/css/main.13f25158.chunk.css",
+    "static/js/main.baa4c6ec.chunk.js"
   ]
 }
