@@ -1,0 +1,63 @@
+@import "static/styles/colors.scss";
+@import "static/styles/main.scss";
+
+.container {
+    @extend %flex-container;
+    background-color: $gray-120;
+    position: absolute;
+    flex-wrap: wrap;
+    max-width: 33rem;
+    width: 100%;
+    padding: 0 30px 30px;
+    left: 23.5rem;
+    top: 18.8rem;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all .1s ease-in-out;
+    transform: translateX(-24rem) scale(0.1);
+}
+
+.toggled {
+    height: auto;
+    opacity: 1;
+    transform: translateX(0) scale(1);
+
+}
+.article {
+    @extend %flex-container-column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 3rem;
+    transition: transform .2s ease-out;
+
+    &:nth-child(even) {
+        margin-left: 30px;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    p {
+        color: $gray-500;
+        padding: .3rem 0;
+    }
+    span {
+        color: $blue-400;
+        font-weight: bold;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:hover img {
+            border-radius: 6px;
+            box-shadow: 0 0 .5rem 0 rgba(#000, .75)
+        }
+    }
+}

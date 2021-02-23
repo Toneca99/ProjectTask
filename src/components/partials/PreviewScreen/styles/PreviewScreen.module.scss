@@ -1,0 +1,25 @@
+@import "static/styles/colors.scss";
+@import "static/styles/main.scss";
+
+.container {
+    @extend %flex-container;
+    @extend %flex-item-1;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray-400;
+}
+
+.content {
+    max-width: 100%;
+    background: $preview-gradient;
+    @extend %flex-item-1;
+    height: 100%;;
+}
+
+.tablet {
+    max-width: 864px;
+}
+
+.mobile {
+    max-width: 464px;
+}

@@ -1,0 +1,68 @@
+@import "static/styles/colors.scss";
+@import "static/styles/main.scss";
+
+.link {
+    @extend %flex-container;
+    align-items: center;
+    position: relative;
+    padding: 1.1rem 0;
+    cursor: pointer;
+    transition: all .2s ease-out;
+    
+    @media (hover: hover) {
+        &:hover {
+            background-color: $gray-120;
+            color: $blue-400;
+
+            .borderLine {
+                opacity: 1;
+            }
+
+            svg {
+                @include hover-color;
+            }
+        }
+    }
+
+    &:focus {
+        background-color: $gray-120;
+        color: $blue-400;
+
+        .borderLine {
+            opacity: 1;
+        }
+
+        svg {
+            @include hover-color;
+        }
+    }
+}
+
+.borderLine {
+    border: 0.15rem solid $blue-400;
+    border-radius: 0 .4rem .4rem;
+    height: 5.5rem;
+    top: 0;
+    left: 0;
+    background: $blue-400;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+}
+
+.icon {
+    padding: 0 2rem 0 3rem;
+}
+
+
+.selected {
+    background-color: $gray-120;
+    color: $blue-400;
+    .borderLine {
+        opacity: 1;
+    }
+
+    svg {
+        @include hover-color;
+    }
+}

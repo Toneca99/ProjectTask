@@ -1,0 +1,89 @@
+
+@import "static/styles/colors.scss";
+@import "static/styles/main.scss";
+
+header {
+    @extend %flex-container;
+    align-items: center;
+    height: 6.4rem;
+    padding: 0 2rem;
+    background-color: $white;
+    border-bottom: .1rem solid $gray-100;
+
+    article {
+        @extend %flex-container;
+        @extend %flex-item-1;
+        align-items: center;
+    
+        &:nth-child(2) {
+            justify-content: flex-end;
+        }
+    }    
+}
+
+
+.logo {
+    display: block;
+    line-height: 3.4rem;
+    padding-right: 5rem;
+    border-right: .1rem solid $gray-100;
+}
+
+.headerItem {
+    @extend %flex-container;
+    margin-left: 5rem;
+    align-items: center;
+    
+    span {
+        margin-left: 1rem;
+    }
+}
+
+.draftButton {
+    @extend %flex-container;
+    align-items: center;
+    border: 0.1rem solid $blue-900;
+    width: 100%;
+    max-width: 10rem;
+    height: 3rem;
+    margin-right: 3rem;
+    border-radius: .4rem;
+    cursor: pointer;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 10px;
+        border: .1rem solid $blue-300;
+    }
+
+    .arrow {
+        margin: 10px;
+    }
+}
+
+.exit {
+    @extend %flex-container;
+    padding-left: 3rem;
+    align-items: center;
+    border-left: .1rem solid $gray-100 !important;
+    cursor: pointer;
+    transition: all .1s ease-in;
+
+    @media (hover: hover) {
+        &:hover {
+            @include hover-color;
+        }
+    }
+
+    &:focus {
+        @include hover-color;
+    }
+    
+    span {
+        margin-left: 1rem;
+    }
+}

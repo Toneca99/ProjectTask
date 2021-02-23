@@ -1,0 +1,46 @@
+
+@import-normalize;
+@import "./colors.scss";
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue-Bold.otf") format(opentype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue-Bold.otf") format(opentype);
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "HelveticaNeue", sans-serif;
+  font-weight: normal;
+  color: $blue-900;
+  font-size: 1.4rem;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}

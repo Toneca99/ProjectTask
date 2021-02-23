@@ -1,0 +1,28 @@
+
+
+$mobile: "(max-width: 567px)";
+$tablet:  "(max-width: 768px)";
+
+%flex-container {
+    display: flex;
+}
+
+%flex-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-container-row {
+    display: flex;
+    flex-direction: column;
+}
+
+@for $i from 1 through 10 {
+    %flex-item-#{$i} {
+        flex: #{$i}
+    }
+}
+
+@mixin hover-color{
+    filter: brightness(0) saturate(100%) invert(44%) sepia(14%) saturate(2266%) hue-rotate(195deg) brightness(95%) contrast(84%);
+}

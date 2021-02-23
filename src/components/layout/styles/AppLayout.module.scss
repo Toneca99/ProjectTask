@@ -1,0 +1,12 @@
+@import "static/styles/colors.scss";
+@import "static/styles/main.scss";
+
+.container {
+    @extend %flex-container-column;
+    min-height: 100vh;
+}
+
+.content {
+    @extend %flex-container;
+    @extend %flex-item-1;
+}

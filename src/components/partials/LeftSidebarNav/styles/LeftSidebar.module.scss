@@ -1,0 +1,35 @@
+@import "static/styles/colors.scss";
+@import "static/styles/main.scss";
+
+.container {
+    @extend %flex-container-column;
+    @extend %flex-item-1;
+    max-width: 23.5rem;
+    background-color: $white;
+}
+
+.previewFormIcons {
+    @extend %flex-container;
+    padding: 1.3rem 4.8rem;
+    border-bottom: 1px solid $gray-100;
+}
+
+.previewIcon {
+    @extend %flex-item-1;
+    margin-left: 4.8rem;
+    text-align: center;
+    cursor: pointer;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.navItems {
+    margin-top: 2rem;
+    @extend %flex-item-1;
+}
+
+.selected svg {
+    @include hover-color;
+}
